@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DocumentReader'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DocumentReader.'
+  s.version          = '0.2.0'
+  s.summary          = 'DocumentReader framework'
   
   s.homepage         = 'https://github.com/DmitrySmolyakov/DocumentReader'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

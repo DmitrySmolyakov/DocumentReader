@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import DocumentReader
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let docReader = DocReader(licensePath: String())
         // Do any additional setup after loading the view, typically from a nib.
     }
 

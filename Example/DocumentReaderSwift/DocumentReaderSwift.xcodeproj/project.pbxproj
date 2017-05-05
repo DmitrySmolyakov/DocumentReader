@@ -12,6 +12,7 @@
 		0A86857C1EBCB6EF00F452EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A86857A1EBCB6EF00F452EC /* Main.storyboard */; };
 		0A86857E1EBCB6EF00F452EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A86857D1EBCB6EF00F452EC /* Assets.xcassets */; };
 		0A8685811EBCB6EF00F452EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A86857F1EBCB6EF00F452EC /* LaunchScreen.storyboard */; };
+		F1A8DF4E07A11D8CE6D15108 /* Pods_DocumentReaderSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18739B32C0E19BB17F7DD905 /* Pods_DocumentReaderSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0A86857D1EBCB6EF00F452EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A8685801EBCB6EF00F452EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8685821EBCB6EF00F452EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18739B32C0E19BB17F7DD905 /* Pods_DocumentReaderSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocumentReaderSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F0C833AB3D487A8DAC01F3 /* Pods-DocumentReaderSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocumentReaderSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocumentReaderSwift/Pods-DocumentReaderSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		EB7335FC0E52D2E405839857 /* Pods-DocumentReaderSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocumentReaderSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocumentReaderSwift/Pods-DocumentReaderSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A8DF4E07A11D8CE6D15108 /* Pods_DocumentReaderSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0A8685751EBCB6EF00F452EC /* DocumentReaderSwift */,
 				0A8685741EBCB6EF00F452EC /* Products */,
+				515D9CE5471FFCF139CCBE3A /* Pods */,
+				F6DDF139AB1399DE4760A9FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = DocumentReaderSwift;
 			sourceTree = "<group>";
 		};
+		515D9CE5471FFCF139CCBE3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0C833AB3D487A8DAC01F3 /* Pods-DocumentReaderSwift.debug.xcconfig */,
+				EB7335FC0E52D2E405839857 /* Pods-DocumentReaderSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6DDF139AB1399DE4760A9FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18739B32C0E19BB17F7DD905 /* Pods_DocumentReaderSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A8685851EBCB6EF00F452EC /* Build configuration list for PBXNativeTarget "DocumentReaderSwift" */;
 			buildPhases = (
+				E398B1D3441EB649853770CA /* [CP] Check Pods Manifest.lock */,
 				0A86856F1EBCB6EF00F452EC /* Sources */,
 				0A8685701EBCB6EF00F452EC /* Frameworks */,
 				0A8685711EBCB6EF00F452EC /* Resources */,
+				1671D429CCB43D22850D52E9 /* [CP] Embed Pods Frameworks */,
+				250F4D26E57849512216CB8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1671D429CCB43D22850D52E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocumentReaderSwift/Pods-DocumentReaderSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		250F4D26E57849512216CB8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DocumentReaderSwift/Pods-DocumentReaderSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E398B1D3441EB649853770CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A86856F1EBCB6EF00F452EC /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		0A8685861EBCB6EF00F452EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F0C833AB3D487A8DAC01F3 /* Pods-DocumentReaderSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UP59H75SNK;
@@ -274,6 +350,7 @@
 		};
 		0A8685871EBCB6EF00F452EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7335FC0E52D2E405839857 /* Pods-DocumentReaderSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UP59H75SNK;

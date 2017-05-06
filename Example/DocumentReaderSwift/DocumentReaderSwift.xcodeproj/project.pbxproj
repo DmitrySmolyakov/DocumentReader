@@ -338,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3F0C833AB3D487A8DAC01F3 /* Pods-DocumentReaderSwift.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UP59H75SNK;
 				INFOPLIST_FILE = DocumentReaderSwift/Info.plist;
@@ -352,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB7335FC0E52D2E405839857 /* Pods-DocumentReaderSwift.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UP59H75SNK;
 				INFOPLIST_FILE = DocumentReaderSwift/Info.plist;
@@ -381,6 +383,7 @@
 				0A8685871EBCB6EF00F452EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

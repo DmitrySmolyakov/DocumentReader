@@ -33,3 +33,4 @@ Carthage
 # Pods/
 Example/DocumentReaderSwift/Pods/DocumentReader
 Manifest.lock
+Example/DocumentReaderObjectiveC/Pods/DocumentReader

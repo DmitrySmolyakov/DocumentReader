@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0A8685961EBCB7FD00F452EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8685951EBCB7FD00F452EC /* main.m */; };
 		0A8685991EBCB7FD00F452EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8685981EBCB7FD00F452EC /* AppDelegate.m */; };
-		0A86859C1EBCB7FD00F452EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A86859B1EBCB7FD00F452EC /* ViewController.m */; };
 		0A86859F1EBCB7FD00F452EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A86859D1EBCB7FD00F452EC /* Main.storyboard */; };
 		0A8685A11EBCB7FD00F452EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8685A01EBCB7FD00F452EC /* Assets.xcassets */; };
 		0A8685A41EBCB7FD00F452EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8685A21EBCB7FD00F452EC /* LaunchScreen.storyboard */; };
+		0A97D6B31EBF374700CF56AB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A97D6B21EBF374700CF56AB /* HomeViewController.m */; };
 		49815986FA664A9BD0F1DBB0 /* Pods_DocumentReaderObjectiveC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867A886B41D6315212ACC74E /* Pods_DocumentReaderObjectiveC.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +21,12 @@
 		0A8685951EBCB7FD00F452EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A8685971EBCB7FD00F452EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A8685981EBCB7FD00F452EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A86859A1EBCB7FD00F452EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A86859B1EBCB7FD00F452EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A86859E1EBCB7FD00F452EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A8685A01EBCB7FD00F452EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A8685A31EBCB7FD00F452EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8685A51EBCB7FD00F452EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A97D6B11EBF374700CF56AB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0A97D6B21EBF374700CF56AB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		6ABBB73227D9E258D5C3CF06 /* Pods-DocumentReaderObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocumentReaderObjectiveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DocumentReaderObjectiveC/Pods-DocumentReaderObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
 		867A886B41D6315212ACC74E /* Pods_DocumentReaderObjectiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocumentReaderObjectiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D3ECC4CE8D28F263BB6B44 /* Pods-DocumentReaderObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocumentReaderObjectiveC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DocumentReaderObjectiveC/Pods-DocumentReaderObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,14 +65,12 @@
 		0A8685931EBCB7FD00F452EC /* DocumentReaderObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				0A97D6B41EBF375F00CF56AB /* ViewControllers */,
 				0A8685971EBCB7FD00F452EC /* AppDelegate.h */,
 				0A8685981EBCB7FD00F452EC /* AppDelegate.m */,
-				0A86859A1EBCB7FD00F452EC /* ViewController.h */,
-				0A86859B1EBCB7FD00F452EC /* ViewController.m */,
 				0A86859D1EBCB7FD00F452EC /* Main.storyboard */,
 				0A8685A01EBCB7FD00F452EC /* Assets.xcassets */,
 				0A8685A21EBCB7FD00F452EC /* LaunchScreen.storyboard */,
-				0A8685A51EBCB7FD00F452EC /* Info.plist */,
 				0A8685941EBCB7FD00F452EC /* Supporting Files */,
 			);
 			path = DocumentReaderObjectiveC;
@@ -81,9 +79,19 @@
 		0A8685941EBCB7FD00F452EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A8685A51EBCB7FD00F452EC /* Info.plist */,
 				0A8685951EBCB7FD00F452EC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A97D6B41EBF375F00CF56AB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A97D6B11EBF374700CF56AB /* HomeViewController.h */,
+				0A97D6B21EBF374700CF56AB /* HomeViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		5C7C4E5AB1F59322C2F3E682 /* Frameworks */ = {
@@ -226,9 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A86859C1EBCB7FD00F452EC /* ViewController.m in Sources */,
 				0A8685991EBCB7FD00F452EC /* AppDelegate.m in Sources */,
 				0A8685961EBCB7FD00F452EC /* main.m in Sources */,
+				0A97D6B31EBF374700CF56AB /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

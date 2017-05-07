@@ -14,19 +14,19 @@
 
 /* Begin PBXFileReference section */
 		018BAD4D46F7F4F0D9AA567691B82276 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3411DFEE8AFBAB0A66FAB98157843B19 /* Pods-DocumentReaderSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DocumentReaderSwift.modulemap"; sourceTree = "<group>"; };
+		3411DFEE8AFBAB0A66FAB98157843B19 /* Pods-DocumentReaderSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DocumentReaderSwift.modulemap"; sourceTree = "<group>"; };
 		49C3F14D693F6A9AB08D6DB44A7FC0B9 /* DocumentReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DocumentReader.framework; sourceTree = "<group>"; };
 		516AF7A9003A7FB7711198DED1747463 /* Pods-DocumentReaderSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DocumentReaderSwift-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6BC5C025C5B706CEFE996378965862FF /* Pods-DocumentReaderSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DocumentReaderSwift-resources.sh"; sourceTree = "<group>"; };
 		90A9D2EB7ED1C9A4A4F1FD1D0B26D05F /* Pods-DocumentReaderSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocumentReaderSwift.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		966A27E9F032C9B46ED98669DFEB0DF7 /* Pods-DocumentReaderSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DocumentReaderSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A87F114641646AA7BA83A4D9E5B09DAA /* Pods-DocumentReaderSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DocumentReaderSwift-umbrella.h"; sourceTree = "<group>"; };
 		AA388F6D907192FF25E77821FB5CF37A /* Pods-DocumentReaderSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DocumentReaderSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B2826A4D0162BD857FD9B80648AFE4BD /* Pods-DocumentReaderSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DocumentReaderSwift-dummy.m"; sourceTree = "<group>"; };
 		B781FD78B9138B32F23F714DA8ED6304 /* Pods-DocumentReaderSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DocumentReaderSwift-frameworks.sh"; sourceTree = "<group>"; };
-		C1E8032EAC89D62C1EFDADE9CB107A64 /* Pods_DocumentReaderSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocumentReaderSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E8032EAC89D62C1EFDADE9CB107A64 /* Pods_DocumentReaderSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DocumentReaderSwift.framework; path = "Pods-DocumentReaderSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +91,7 @@
 			children = (
 				2840D3234C96A20A940DA8BC0DA0907C /* Frameworks */,
 			);
+			name = DocumentReader;
 			path = DocumentReader;
 			sourceTree = "<group>";
 		};
@@ -199,7 +200,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA388F6D907192FF25E77821FB5CF37A /* Pods-DocumentReaderSwift.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -280,7 +280,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90A9D2EB7ED1C9A4A4F1FD1D0B26D05F /* Pods-DocumentReaderSwift.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  DocumentReaderObjectiveC
 //
-//  Created by Dmitry Smolyakov on 5/5/17.
+//  Created by Dmitry Smolyakov on 5/7/17.
 //  Copyright © 2017 Dmitry Smolyakov. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeViewController : UITableViewController
 
 @end
-

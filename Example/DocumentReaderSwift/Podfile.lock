@@ -1,11 +1,11 @@
 PODS:
-  - DocumentReader (0.2.0)
+  - DocumentReader (0.3.0)
 
 DEPENDENCIES:
   - DocumentReader
 
 SPEC CHECKSUMS:
-  DocumentReader: 02d889636304e35eafcb1028d4fea98dc6415f33
+  DocumentReader: 34ff6ae379c6fad781b7296c70d58553a32b20f2
 
 PODFILE CHECKSUM: 4ecc9a5319fab750db3880087b96967f2cbc7a75
 

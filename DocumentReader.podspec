@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DocumentReader'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'DocumentReader framework'
   
   s.homepage         = 'https://github.com/DmitrySmolyakov/DocumentReader'

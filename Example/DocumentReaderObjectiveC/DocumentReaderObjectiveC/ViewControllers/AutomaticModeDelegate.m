@@ -9,7 +9,7 @@
 #import "AutomaticModeDelegate.h"
 @import DocumentReader;
 
-@interface AutomaticModeDelegate () <DocumentReaderCameraDelegate>
+@interface AutomaticModeDelegate () <DocumentReaderDelegate>
 
 @end
 
@@ -22,7 +22,7 @@
     [documentReader showScannerWithPresenter:self completion:nil];
 }
 
-#pragma mark - DocumentReaderCameraDelegate
+#pragma mark - DocumentReaderDelegate
 
 - (void)documentReader:(DocReader * _Nonnull)documentReader didCompleteCameraScanning:(DocumentReaderResults * _Nullable)result {
     NSLog(@"Completed");

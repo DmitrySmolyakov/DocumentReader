@@ -10,7 +10,8 @@
 		0A41AF341EC320B800BFA40D /* AutomaticModeCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41AF331EC320B800BFA40D /* AutomaticModeCompletion.m */; };
 		0A41AF371EC320C300BFA40D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41AF361EC320C300BFA40D /* HomeViewController.m */; };
 		0A41AF3A1EC320EA00BFA40D /* AutomaticModeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41AF391EC320EA00BFA40D /* AutomaticModeDelegate.m */; };
-		0A41AF421EC35D8700BFA40D /* ManualModeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41AF411EC35D8700BFA40D /* ManualModeController.m */; };
+		0A41AF421EC35D8700BFA40D /* ManualModeCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A41AF411EC35D8700BFA40D /* ManualModeCompletion.m */; };
+		0A4464411EC4BEDE00742B68 /* ManualModeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4464401EC4BEDE00742B68 /* ManualModeDelegate.m */; };
 		0A8685961EBCB7FD00F452EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8685951EBCB7FD00F452EC /* main.m */; };
 		0A8685991EBCB7FD00F452EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8685981EBCB7FD00F452EC /* AppDelegate.m */; };
 		0A86859F1EBCB7FD00F452EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A86859D1EBCB7FD00F452EC /* Main.storyboard */; };
@@ -26,8 +27,10 @@
 		0A41AF361EC320C300BFA40D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
 		0A41AF381EC320EA00BFA40D /* AutomaticModeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutomaticModeDelegate.h; path = ViewControllers/AutomaticModeDelegate.h; sourceTree = "<group>"; };
 		0A41AF391EC320EA00BFA40D /* AutomaticModeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutomaticModeDelegate.m; path = ViewControllers/AutomaticModeDelegate.m; sourceTree = "<group>"; };
-		0A41AF401EC35D8700BFA40D /* ManualModeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManualModeController.h; path = ViewControllers/ManualModeController.h; sourceTree = "<group>"; };
-		0A41AF411EC35D8700BFA40D /* ManualModeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManualModeController.m; path = ViewControllers/ManualModeController.m; sourceTree = "<group>"; };
+		0A41AF401EC35D8700BFA40D /* ManualModeCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManualModeCompletion.h; path = ViewControllers/ManualModeCompletion.h; sourceTree = "<group>"; };
+		0A41AF411EC35D8700BFA40D /* ManualModeCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManualModeCompletion.m; path = ViewControllers/ManualModeCompletion.m; sourceTree = "<group>"; };
+		0A44643F1EC4BEDE00742B68 /* ManualModeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManualModeDelegate.h; path = ViewControllers/ManualModeDelegate.h; sourceTree = "<group>"; };
+		0A4464401EC4BEDE00742B68 /* ManualModeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManualModeDelegate.m; path = ViewControllers/ManualModeDelegate.m; sourceTree = "<group>"; };
 		0A8685911EBCB7FD00F452EC /* DocumentReaderObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentReaderObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8685951EBCB7FD00F452EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A8685971EBCB7FD00F452EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,13 +83,22 @@
 			name = AutomaticModeDelegate;
 			sourceTree = "<group>";
 		};
-		0A41AF3F1EC35D6400BFA40D /* ManualModeController */ = {
+		0A41AF3F1EC35D6400BFA40D /* ManualModeCompletion */ = {
 			isa = PBXGroup;
 			children = (
-				0A41AF401EC35D8700BFA40D /* ManualModeController.h */,
-				0A41AF411EC35D8700BFA40D /* ManualModeController.m */,
+				0A41AF401EC35D8700BFA40D /* ManualModeCompletion.h */,
+				0A41AF411EC35D8700BFA40D /* ManualModeCompletion.m */,
 			);
-			name = ManualModeController;
+			name = ManualModeCompletion;
+			sourceTree = "<group>";
+		};
+		0A44643E1EC4BEBD00742B68 /* ManualModeDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0A44643F1EC4BEDE00742B68 /* ManualModeDelegate.h */,
+				0A4464401EC4BEDE00742B68 /* ManualModeDelegate.m */,
+			);
+			name = ManualModeDelegate;
 			sourceTree = "<group>";
 		};
 		0A8685881EBCB7FD00F452EC = {
@@ -135,7 +147,8 @@
 			children = (
 				0A41AF2D1EC3205900BFA40D /* AutomaticModeCompletion */,
 				0A41AF2E1EC3207100BFA40D /* AutomaticModeDelegate */,
-				0A41AF3F1EC35D6400BFA40D /* ManualModeController */,
+				0A41AF3F1EC35D6400BFA40D /* ManualModeCompletion */,
+				0A44643E1EC4BEBD00742B68 /* ManualModeDelegate */,
 				0A41AF2C1EC3204800BFA40D /* HomeViewController */,
 			);
 			name = ViewControllers;
@@ -285,8 +298,9 @@
 				0A8685961EBCB7FD00F452EC /* main.m in Sources */,
 				0A41AF341EC320B800BFA40D /* AutomaticModeCompletion.m in Sources */,
 				0A41AF3A1EC320EA00BFA40D /* AutomaticModeDelegate.m in Sources */,
-				0A41AF421EC35D8700BFA40D /* ManualModeController.m in Sources */,
+				0A41AF421EC35D8700BFA40D /* ManualModeCompletion.m in Sources */,
 				0A41AF371EC320C300BFA40D /* HomeViewController.m in Sources */,
+				0A4464411EC4BEDE00742B68 /* ManualModeDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

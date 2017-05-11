@@ -11,6 +11,8 @@
 //view controllers
 #import "AutomaticModeCompletion.h"
 #import "AutomaticModeDelegate.h"
+#import "ManualModeCompletion.h"
+#import "ManualModeDelegate.h"
 
 @interface HomeViewController ()
 
@@ -46,7 +48,8 @@
         @[
           @[@"Use CameraViewController completion block",
             @"Use CameraViewController delegate"],
-          @[@"Use -recognizeImage function. Recognize image from bundle"],
+          @[@"Use -recognizeImage function with completion. Recognize image from bundle",
+            @"Use -recognizeImage function with delegate. Recognize image from bundle"],
           @[@"Constructor for get results functions"],
           @[@"CameraViewController inside another ViewController"]]; }
     return _titleArray;
@@ -108,13 +111,31 @@
         switch (indexPath.row) {
             case 0: { //1.1 Use CameraViewController completion block
                 vc = (AutomaticModeCompletion *)[self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(AutomaticModeCompletion.class)];
+                break;
             }
             case 1: { //1.2 Use CameraViewController delegate
                 vc = (AutomaticModeDelegate *)[self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(AutomaticModeDelegate.class)];
+                break;
             }
         default:
             break;
         }
+    break;
+
+    case 1: //Manual mode
+        switch (indexPath.row) {
+            case 0: { //2.1 Use -recognizeImage function with completion. Recognize image from bundle
+                vc = (ManualModeCompletion *)[self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(ManualModeCompletion.class)];
+                break;
+            }
+            case 1: { //2.2 Use -recognizeImage function with delegate. Recognize image from bundle
+                vc = (ManualModeDelegate *)[self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(ManualModeDelegate.class)];
+                break;
+            }
+            default:
+                break;
+        }
+    break;
     default:
         break;
     }

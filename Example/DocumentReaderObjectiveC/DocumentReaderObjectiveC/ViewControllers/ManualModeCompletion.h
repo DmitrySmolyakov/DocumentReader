@@ -1,5 +1,5 @@
 //
-//  ManualModeController.h
+//  ManualModeCompletion.h
 //  DocumentReaderObjectiveC
 //
 //  Created by Dmitry Smolyakov on 5/10/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ManualModeController : UIViewController
+@interface ManualModeCompletion : UIViewController
 
 @end

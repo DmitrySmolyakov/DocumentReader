@@ -69,7 +69,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-hn-mXb">
-                                <rect key="frame" x="82.5" y="314" width="210" height="38"/>
+                                <rect key="frame" x="15" y="314" width="345" height="38"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <state key="normal" title="Start with completion"/>
                                 <connections>
@@ -81,12 +81,60 @@
                         <constraints>
                             <constraint firstItem="Awq-hn-mXb" firstAttribute="centerX" secondItem="AAD-xb-DcP" secondAttribute="centerX" id="JtR-H5-yX8"/>
                             <constraint firstItem="Awq-hn-mXb" firstAttribute="centerY" secondItem="AAD-xb-DcP" secondAttribute="centerY" id="Ljt-WC-R1j"/>
+                            <constraint firstItem="Awq-hn-mXb" firstAttribute="leading" secondItem="AAD-xb-DcP" secondAttribute="leading" constant="15" id="cuo-Ec-fue"/>
+                            <constraint firstAttribute="trailing" secondItem="Awq-hn-mXb" secondAttribute="trailing" constant="15" id="gay-cW-tfD"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1XQ-8m-5Sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="216.80000000000001" y="796.55172413793105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k7P-c8-bhj">
+            <objects>
+                <viewController id="Bmx-Mm-6DZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wri-sY-SZH"/>
+                        <viewControllerLayoutGuide type="bottom" id="kOK-9w-XlI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKW-5u-k9g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a sample of usage get results methods" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ2-SY-YT4">
+                                <rect key="frame" x="13" y="28" width="349.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-getTextFieldValueByTypeWithFieldType:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="edE-LT-Rt6">
+                                <rect key="frame" x="15" y="76" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fieldType:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDr-0a-aEB">
+                                <rect key="frame" x="31" y="105" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="edE-LT-Rt6" firstAttribute="top" secondItem="rQ2-SY-YT4" secondAttribute="bottom" constant="27" id="06N-0w-2xx"/>
+                            <constraint firstItem="rQ2-SY-YT4" firstAttribute="top" secondItem="Wri-sY-SZH" secondAttribute="bottom" constant="8" id="9aL-e5-YRh"/>
+                            <constraint firstItem="edE-LT-Rt6" firstAttribute="leading" secondItem="gKW-5u-k9g" secondAttribute="leading" constant="15" id="EAK-fB-AIp"/>
+                            <constraint firstAttribute="trailing" secondItem="edE-LT-Rt6" secondAttribute="trailing" constant="15" id="HBb-i5-2Rj"/>
+                            <constraint firstItem="rQ2-SY-YT4" firstAttribute="centerX" secondItem="gKW-5u-k9g" secondAttribute="centerX" id="wbA-e8-bFz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKf-Xm-VGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216.80000000000001" y="1480.2098950524739"/>
         </scene>
         <!--Automatic Mode Delegate-->
         <scene sceneID="SuP-UW-Kgs">
@@ -101,7 +149,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N7-XA-gqe">
-                                <rect key="frame" x="95" y="313.5" width="185" height="39"/>
+                                <rect key="frame" x="15" y="313.5" width="345" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Start with delegate"/>
                                 <connections>
@@ -112,6 +160,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8N7-XA-gqe" firstAttribute="centerY" secondItem="CJF-wg-WVL" secondAttribute="centerY" id="9wi-Ry-xDZ"/>
+                            <constraint firstItem="8N7-XA-gqe" firstAttribute="leading" secondItem="CJF-wg-WVL" secondAttribute="leading" constant="15" id="HXW-F8-DXi"/>
+                            <constraint firstAttribute="trailing" secondItem="8N7-XA-gqe" secondAttribute="trailing" constant="15" id="Q1T-S5-WOb"/>
                             <constraint firstItem="8N7-XA-gqe" firstAttribute="centerX" secondItem="CJF-wg-WVL" secondAttribute="centerX" id="wGX-aw-m9q"/>
                         </constraints>
                     </view>
@@ -120,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="973.60000000000002" y="796.55172413793105"/>
         </scene>
-        <!--Manual Mode Controller-->
+        <!--Manual Mode Completion-->
         <scene sceneID="89z-8p-8tw">
             <objects>
-                <viewController storyboardIdentifier="ManualModeController" id="3MO-Sn-NK4" customClass="ManualModeController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ManualModeCompletion" id="3MO-Sn-NK4" customClass="ManualModeCompletion" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4L4-nX-Amw"/>
                         <viewControllerLayoutGuide type="bottom" id="Vfd-qP-yUh"/>
@@ -133,24 +183,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZx-TD-brK">
-                                <rect key="frame" x="102" y="314" width="171" height="38"/>
+                                <rect key="frame" x="15" y="314" width="345" height="38"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                <state key="normal" title="Recognize Image"/>
+                                <state key="normal" title="Recognize Image with completion"/>
                                 <connections>
-                                    <action selector="recognizeImagePressed:" destination="3MO-Sn-NK4" eventType="touchUpInside" id="lg0-k4-vSX"/>
+                                    <action selector="recognizeImagePressed:" destination="3MO-Sn-NK4" eventType="touchUpInside" id="v4Y-JE-34n"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iZx-TD-brK" firstAttribute="centerX" secondItem="UdF-5i-LDN" secondAttribute="centerX" id="Eyh-Fb-VYO"/>
+                            <constraint firstAttribute="trailing" secondItem="iZx-TD-brK" secondAttribute="trailing" constant="15" id="Rt8-mH-8SQ"/>
+                            <constraint firstItem="iZx-TD-brK" firstAttribute="leading" secondItem="UdF-5i-LDN" secondAttribute="leading" constant="15" id="k0S-an-YPi"/>
                             <constraint firstItem="iZx-TD-brK" firstAttribute="centerY" secondItem="UdF-5i-LDN" secondAttribute="centerY" id="uwK-es-20w"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIm-RK-iwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.8" y="797.45127436281871"/>
+            <point key="canvasLocation" x="1714" y="797"/>
+        </scene>
+        <!--Manual Mode Delegate-->
+        <scene sceneID="vau-3F-ExP">
+            <objects>
+                <viewController storyboardIdentifier="ManualModeDelegate" id="Ywv-tO-0EN" customClass="ManualModeDelegate" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wfk-Q8-keW"/>
+                        <viewControllerLayoutGuide type="bottom" id="bSs-kB-Cvc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZJI-bK-7xL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crh-4K-YrI">
+                                <rect key="frame" x="15" y="313.5" width="345" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Recognize Image with delegate"/>
+                                <connections>
+                                    <action selector="recognizeImagePressed:" destination="Ywv-tO-0EN" eventType="touchUpInside" id="55m-D0-rrB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="crh-4K-YrI" firstAttribute="centerX" secondItem="ZJI-bK-7xL" secondAttribute="centerX" id="N0z-LY-zjz"/>
+                            <constraint firstAttribute="trailing" secondItem="crh-4K-YrI" secondAttribute="trailing" constant="15" id="NLx-vh-LZY"/>
+                            <constraint firstItem="crh-4K-YrI" firstAttribute="centerY" secondItem="ZJI-bK-7xL" secondAttribute="centerY" id="a1W-P0-ssU"/>
+                            <constraint firstItem="crh-4K-YrI" firstAttribute="leading" secondItem="ZJI-bK-7xL" secondAttribute="leading" constant="15" id="oIf-u5-ZVu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ic4-yO-xM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="797"/>
         </scene>
     </scenes>
 </document>

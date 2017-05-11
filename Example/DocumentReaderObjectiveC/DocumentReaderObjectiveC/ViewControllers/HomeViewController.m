@@ -8,6 +8,10 @@
 
 #import "HomeViewController.h"
 
+//view controllers
+#import "AutomaticModeCompletion.h"
+#import "AutomaticModeDelegate.h"
+
 @interface HomeViewController ()
 
 @property (strong, nonatomic) NSArray<NSString *> *sectionTitleArray;
@@ -97,6 +101,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    UIViewController *vc;
+    switch (indexPath.section) {
+    case 0: //Automatic mode
+        switch (indexPath.row) {
+            case 0: { //1.1 Use CameraViewController completion block
+                vc = (AutomaticModeCompletion *)[self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(AutomaticModeCompletion.class)];
+            }
+            case 1: { //1.2 Use CameraViewController delegate
+                vc = (AutomaticModeDelegate *)[self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(AutomaticModeDelegate.class)];
+            }
+        default:
+            break;
+        }
+    default:
+        break;
+    }
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

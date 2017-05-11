@@ -36,7 +36,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6y-HS-9c0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1156" y="102.99850074962519"/>
+            <point key="canvasLocation" x="974" y="103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="By8-Af-L8i">
@@ -55,6 +55,102 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQt-h9-OuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="216.80000000000001" y="102.99850074962519"/>
+        </scene>
+        <!--Automatic Mode Completion-->
+        <scene sceneID="vZb-P0-tlx">
+            <objects>
+                <viewController storyboardIdentifier="AutomaticModeCompletion" id="DZw-nP-5Yw" customClass="AutomaticModeCompletion" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qOp-1P-0Rj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ef0-a8-IHa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AAD-xb-DcP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-hn-mXb">
+                                <rect key="frame" x="82.5" y="314" width="210" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Start with completion"/>
+                                <connections>
+                                    <action selector="startPressed:" destination="DZw-nP-5Yw" eventType="touchUpInside" id="uNx-vV-uxd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Awq-hn-mXb" firstAttribute="centerX" secondItem="AAD-xb-DcP" secondAttribute="centerX" id="JtR-H5-yX8"/>
+                            <constraint firstItem="Awq-hn-mXb" firstAttribute="centerY" secondItem="AAD-xb-DcP" secondAttribute="centerY" id="Ljt-WC-R1j"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XQ-8m-5Sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216.80000000000001" y="796.55172413793105"/>
+        </scene>
+        <!--Automatic Mode Delegate-->
+        <scene sceneID="SuP-UW-Kgs">
+            <objects>
+                <viewController storyboardIdentifier="AutomaticModeDelegate" id="AIa-dG-NME" customClass="AutomaticModeDelegate" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fXO-Jx-zWB"/>
+                        <viewControllerLayoutGuide type="bottom" id="r9C-cY-XOB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CJF-wg-WVL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N7-XA-gqe">
+                                <rect key="frame" x="95" y="313.5" width="185" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Start with delegate"/>
+                                <connections>
+                                    <action selector="startPressed:" destination="AIa-dG-NME" eventType="touchUpInside" id="V6y-JO-vGc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8N7-XA-gqe" firstAttribute="centerY" secondItem="CJF-wg-WVL" secondAttribute="centerY" id="9wi-Ry-xDZ"/>
+                            <constraint firstItem="8N7-XA-gqe" firstAttribute="centerX" secondItem="CJF-wg-WVL" secondAttribute="centerX" id="wGX-aw-m9q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5TT-1Q-92t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="796.55172413793105"/>
+        </scene>
+        <!--Manual Mode Controller-->
+        <scene sceneID="89z-8p-8tw">
+            <objects>
+                <viewController storyboardIdentifier="ManualModeController" id="3MO-Sn-NK4" customClass="ManualModeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4L4-nX-Amw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vfd-qP-yUh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UdF-5i-LDN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZx-TD-brK">
+                                <rect key="frame" x="102" y="314" width="171" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Recognize Image"/>
+                                <connections>
+                                    <action selector="recognizeImagePressed:" destination="3MO-Sn-NK4" eventType="touchUpInside" id="lg0-k4-vSX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iZx-TD-brK" firstAttribute="centerX" secondItem="UdF-5i-LDN" secondAttribute="centerX" id="Eyh-Fb-VYO"/>
+                            <constraint firstItem="iZx-TD-brK" firstAttribute="centerY" secondItem="UdF-5i-LDN" secondAttribute="centerY" id="uwK-es-20w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIm-RK-iwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="797.45127436281871"/>
         </scene>
     </scenes>
 </document>

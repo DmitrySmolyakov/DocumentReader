@@ -15,11 +15,18 @@
 
     UIImage *image = [UIImage imageNamed:@"TestPhoto"];
 
-    DocReader *documentReader = [[DocReader alloc] initWithLicensePath:[NSString string]];
-    [documentReader recognizeImageWithImage:image completion:^(enum DocReaderAction action, DocumentReaderResults * _Nullable result) {
+    DocReader *documentReader = [[DocReader alloc] initWithLicense:[NSData data]];
+    [documentReader recognizeImage:image completion:^(enum DocReaderAction action, DocumentReaderResults * _Nullable result, NSString * _Nullable error) {
         if (action == DocReaderActionComplete) {
-            NSLog(@"Completed");
-            NSLog(@"Result class: %@", result);
+            if (result) {
+                NSLog(@"Completed");
+                NSLog(@"Result class: %@", result);
+            } else {
+                NSLog(@"Completed without result");
+            }
+        } else if (action == DocReaderActionError) {
+            NSLog(@"Eror");
+            NSLog(@"Eror string: %@", error);
         }
     }];
 }

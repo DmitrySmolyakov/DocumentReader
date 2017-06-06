@@ -13,16 +13,20 @@
 
 - (IBAction)startPressed:(UIButton *)sender {
 
-    DocReader *documentReader = [[DocReader alloc] initWithLicensePath:[NSString new]];
-    [documentReader showScannerWithPresenter:self completion:^(enum DocReaderAction action, DocumentReaderResults * _Nullable result) {
+    DocReader *documentReader = [[DocReader alloc] initWithLicense:[NSData data]];
+    [documentReader showScanner:self completion:^(enum DocReaderAction action, DocumentReaderResults * _Nullable result, NSString * _Nullable error) {
         switch (action) {
             case DocReaderActionCancel:
-                NSLog(@"Cancelled");
+                NSLog(@"Cancelled by user");
                 break;
             case DocReaderActionComplete: {
                 NSLog(@"Completed");
                 NSLog(@"Result class: %@", result);
             }
+            case DocReaderActionError:
+                NSLog(@"Error");
+                NSLog(@"Error string: %@", error);
+                break;
             default:
                 break;
         }

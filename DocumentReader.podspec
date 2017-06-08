@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.source           = { :http => 'https://github.com/DmitrySmolyakov/DocumentReader/raw/master/DocumentReader.zip' }
 
   s.ios.deployment_target = '8.0'
-  s.ios.vendored_frameworks = 'DocumentReader.framework'
-  s.dependency 'EmbedFramework'
+  s.ios.vendored_frameworks = 'MySDK.framework'
+  #s.dependency 'EmbedFramework'
 end

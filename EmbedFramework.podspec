@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EmbedFramework'
-  s.version          = '0.0.1'
+  s.version          = '0.2.0'
   s.summary          = 'EmbedFramework framework'
   
   s.homepage         = 'https://github.com/DmitrySmolyakov/DocumentReader'

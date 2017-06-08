@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DocumentReader'
-  s.version          = '0.3.2'
+  s.version          = '0.3.3'
   s.summary          = 'DocumentReader framework'
   
   s.homepage         = 'https://github.com/DmitrySmolyakov/DocumentReader'
@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.ios.vendored_frameworks = 'DocumentReader.framework'
+  s.dependency 'EmbedFramework'
 end
